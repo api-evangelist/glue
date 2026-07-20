@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.glue.ai/developers/authentication/oauth-2-0-authentication.md
+docs: https://docs.glue.ai/developers/authentication/oauth-2-0-authentication.md
+summary:
+  types: [oauth2]
+  bearer: true
+  oauth2_flows: [clientCredentials, authorizationCode]
+schemes:
+  - name: GraphQLOAuth2ClientCredentials
+    type: oauth2
+    context: public GraphQL API (https://api.gluegroups.com/public/graphql)
+    flow: clientCredentials
+    token_endpoint: https://api.gluegroups.com/oauth/token
+    token_format: opaque bearer
+    refresh_token: false
+    parameters: [grant_type, client_id, client_secret, subject, redirect_uri]
+    notes: >
+      Apps register an OAuth Application, then exchange client credentials for a
+      workspace-scoped access token (subject = workspace ID). Token is passed as
+      Authorization: Bearer <ACCESS_TOKEN> to the GraphQL endpoint. No refresh token.
+    scopes: [workspaces:read, threads:read, groups:read, threads.messages:write]
+  - name: MCPOAuth2AuthorizationCode
+    type: oauth2
+    context: hosted MCP server (https://mcp.glue.ai/mcp, issuer https://api.glue.ai)
+    flow: authorizationCode
+    authorization_endpoint: https://api.glue.ai/oauth/authorize
+    token_endpoint: https://api.glue.ai/oauth/token
+    registration_endpoint: https://api.glue.ai/oauth/register
+    dynamic_client_registration: true       # RFC 7591
+    pkce: [S256]
+    grant_types: [authorization_code, refresh_token]
+    token_endpoint_auth_methods: [none]
+    scopes: [mcp:read, mcp:write]
+    source: https://api.glue.ai/.well-known/oauth-authorization-server
