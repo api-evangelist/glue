@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.glue.ai/developers/authentication/scopes.md
+docs: https://docs.glue.ai/developers/authentication/scopes.md
+schemes:
+  - name: GraphQLOAuth2ClientCredentials
+    flow: clientCredentials
+    tokenUrl: https://api.gluegroups.com/oauth/token
+  - name: MCPOAuth2AuthorizationCode
+    flow: authorizationCode
+    authorizationUrl: https://api.glue.ai/oauth/authorize
+    tokenUrl: https://api.glue.ai/oauth/token
+scopes:
+  - scope: workspaces:read
+    description: View workspace information
+    flows: [clientCredentials]
+    sources: [https://docs.glue.ai/developers/authentication/scopes.md]
+  - scope: threads:read
+    description: View thread information
+    flows: [clientCredentials]
+    sources: [https://docs.glue.ai/developers/authentication/scopes.md]
+  - scope: groups:read
+    description: View group information
+    flows: [clientCredentials]
+    sources: [https://docs.glue.ai/developers/authentication/scopes.md]
+  - scope: threads.messages:write
+    description: Send messages in threads, group chats and DMs
+    flows: [clientCredentials]
+    sources: [https://docs.glue.ai/developers/authentication/scopes.md]
+  - scope: mcp:read
+    description: Read access via the hosted MCP server
+    flows: [authorizationCode]
+    sources: [https://api.glue.ai/.well-known/oauth-authorization-server]
+  - scope: mcp:write
+    description: Write access via the hosted MCP server
+    flows: [authorizationCode]
+    sources: [https://api.glue.ai/.well-known/oauth-authorization-server]

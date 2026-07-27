@@ -1,8 +1,28 @@
 aid: glue
 name: Glue
-description: 'Glue is a company surfaced as a portfolio company of craft-ventures, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Glue is a team communication platform that replaces channel-based chat with structured,
+  named threads so decisions stay organized and don't get lost, with AI agents (@Glue, @Cursor)
+  that can be mentioned inside threads to summarize, add context, and generate work. For
+  developers, Glue exposes a public GraphQL API at api.gluegroups.com for sending messages and
+  reading workspaces, threads, and groups; OAuth 2.0 authentication (client-credentials for the
+  GraphQL API, plus an authorization-code flow with dynamic client registration and PKCE for a
+  hosted remote MCP server at mcp.glue.ai); outbound webhooks (message.created, thread.created)
+  signed with HMAC-SHA256; and idempotent upsert keys on message and thread creation. Glue is
+  SOC 2 compliant, supports SSO (Google, Okta), and is backed by Craft Ventures and Y Combinator.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://glue.ai/images/opengraph.jpg
 url: https://raw.githubusercontent.com/api-evangelist/glue/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,16 +33,96 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Saas
-apis: []
+- SaaS
+- Team Communication
+- Messaging
+- Collaboration
+- GraphQL
+- Webhooks
+- MCP
+- Productivity
+- AI Agents
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Glue GraphQL API
+  description: >-
+    Public GraphQL API for the Glue workspace — send messages (sendMessage), read workspaces,
+    threads, and groups, with Relay cursor-connection pagination and OAuth2 bearer auth.
+  humanURL: https://docs.glue.ai/developers
+  baseURL: https://api.gluegroups.com/public/graphql
+  properties:
+  - type: APIReference
+    url: https://docs.glue.ai/developers/graphql-api/getting_started.md
+  - type: GettingStarted
+    url: https://docs.glue.ai/developers/graphql-api/getting_started.md
+  - type: Authentication
+    url: authentication/glue-authentication.yml
+  - type: OAuthScopes
+    url: scopes/glue-scopes.yml
 common:
+- type: DomainSecurity
+  url: security/glue-domain-security.yml
 - type: Website
   url: https://glue.ai
+- type: DeveloperPortal
+  url: https://docs.glue.ai/developers
+- type: Documentation
+  url: https://docs.glue.ai
+- type: APIReference
+  url: https://docs.glue.ai/developers/graphql-api/getting_started.md
+- type: GettingStarted
+  url: https://docs.glue.ai/developers/graphql-api/getting_started.md
+- type: Blog
+  url: https://glue.ai/blog
+- type: Pricing
+  url: https://glue.ai/pricing
+- type: SignUp
+  url: https://app.glue.ai/auth?intent=signup
+- type: Login
+  url: https://app.glue.ai/auth?intent=signin
+- type: Support
+  url: https://docs.glue.ai/get-started/help-and-support.md
+- type: TermsOfService
+  url: https://glue.ai/terms
+- type: PrivacyPolicy
+  url: https://glue.ai/privacy
+- type: StatusPage
+  url: https://status.glue.ai
+- type: Compliance
+  url: https://glue.ai/company/security
+- type: Authentication
+  url: authentication/glue-authentication.yml
+- type: OAuthScopes
+  url: scopes/glue-scopes.yml
+- type: MCPServer
+  url: mcp/glue-mcp.yml
+- type: WellKnown
+  url: well-known/glue-well-known.yml
+- type: AsyncAPI
+  url: asyncapi/glue-webhooks-asyncapi.yml
+- type: Webhooks
+  url: asyncapi/glue-webhooks-asyncapi.yml
+- type: Conventions
+  url: conventions/glue-conventions.yml
+- type: Idempotency
+  url: conventions/glue-conventions.yml
+- type: Conformance
+  url: conformance/glue-conformance.yml
+- type: Lifecycle
+  url: lifecycle/glue-lifecycle.yml
+- type: LLMsTxt
+  url: llms/glue-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

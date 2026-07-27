@@ -1,0 +1,107 @@
+# Glue Guide
+
+## Glue Guide
+
+- [Glue 101](https://docs.glue.ai/get-started/readme.md)
+- [Getting started for admins](https://docs.glue.ai/get-started/getting-started-for-admins.md): Get your Glue workspace up and running smoothly
+- [Getting started for users](https://docs.glue.ai/get-started/getting-started-for-users.md): Start using Glue quickly as a new user!
+- [Download apps](https://docs.glue.ai/get-started/download-apps.md)
+- [Help & support](https://docs.glue.ai/get-started/help-and-support.md)
+- [Keyboard shortcuts](https://docs.glue.ai/get-started/keyboard-shortcuts.md): Glue offers keyboard shortcuts to help you work faster, write better, and stay in flow. This page lists all current shortcuts and how to use them.We'll keep updating these as we roll out new features.
+- [Command palette](https://docs.glue.ai/get-started/command-palette.md)
+- [Messaging in Glue](https://docs.glue.ai/conversations/messaging-in-glue.md)
+- [Messaging best practices](https://docs.glue.ai/conversations/messaging-best-practices.md)
+- [Formatting your messages](https://docs.glue.ai/conversations/formatting-your-messages.md): Glue supports rich message formatting to help you communicate clearly and professionally. Use these tools to structure your content in threads, chats, and DMs.
+- [Mentions and notifications](https://docs.glue.ai/conversations/mentions-and-notifications.md)
+- [Resource sidebar](https://docs.glue.ai/conversations/resource-sidebar.md)
+- [Why use the resource sidebar?](https://docs.glue.ai/conversations/resource-sidebar/why-use-the-resource-sidebar.md)
+- [How to use the Resource Sidebar](https://docs.glue.ai/conversations/resource-sidebar/how-to-use-the-resource-sidebar.md)
+- [Threads](https://docs.glue.ai/conversations/threads.md): Organize conversations into Threads
+- [Creating new Threads](https://docs.glue.ai/conversations/threads/creating-new-threads.md): How to start Threads
+- [Create a thread from an existing message](https://docs.glue.ai/conversations/threads/create-a-thread-from-an-existing-message.md): Adapt to evolving conversations
+- [Public threads launch](https://docs.glue.ai/conversations/threads/public-threads-launch.md)
+- [Managing Threads](https://docs.glue.ai/conversations/threads/managing-threads.md)
+- [Advanced thread settings](https://docs.glue.ai/conversations/threads/managing-threads/advanced-thread-settings.md): Thread starters and admins can manage permissions, delete, and get the thread's ID
+- [Group chat](https://docs.glue.ai/conversations/group-chat.md): The place for quick questions and 🔥 memes
+- [Direct messages](https://docs.glue.ai/conversations/direct-messages.md): Private message another user
+- ["Find in" conversation](https://docs.glue.ai/conversations/find-in-conversation.md)
+- [Groups overview](https://docs.glue.ai/groups/groups-overview.md): Organize people into groups around teams, projects, or topics in your Glue workspace.
+- [Group settings](https://docs.glue.ai/groups/group-settings.md): Learn what settings you can manage for a group based on your role
+- [Admin settings for groups](https://docs.glue.ai/groups/group-settings/admin-settings-for-groups.md): Important group admin settings to understand
+- [Group notification settings](https://docs.glue.ai/groups/group-settings/group-notification-settings.md): Focus on the conversations that matter to you
+- [Inbox](https://docs.glue.ai/inbox/inbox.md): One inbox, one place to check ✅
+- [Bulk actions](https://docs.glue.ai/inbox/bulk-actions.md)
+- [Search](https://docs.glue.ai/inbox/search.md): The information you need at your fingertips
+- [Using Glue AI](https://docs.glue.ai/glue-ai/using-glue-ai.md): Leverage AI to supercharge your work
+- [Glue AI Settings & Support](https://docs.glue.ai/glue-ai/glue-ai-settings-and-support.md)
+- [Threads Feed](https://docs.glue.ai/navigating-the-app/threads-feed.md)
+- [Directory](https://docs.glue.ai/navigating-the-app/directory.md)
+- [Activity](https://docs.glue.ai/navigating-the-app/activity.md)
+- [Sign in to Glue](https://docs.glue.ai/profile-and-preferences/sign-in-to-glue.md): The same email address is your login for all Glue workspaces you are a member of. Read on to learn how to sign in to Glue with your email address or Google account.
+- [Profile](https://docs.glue.ai/profile-and-preferences/profile.md)
+- [Preferences](https://docs.glue.ai/profile-and-preferences/preferences.md): Manage your preferences to customize how Glue works for you.
+- [Set a status](https://docs.glue.ai/profile-and-preferences/set-a-status.md): Tell your team you're out of office or in a meeting with a status
+- [Push notifications](https://docs.glue.ai/profile-and-preferences/push-notifications.md): Account Level Notifications
+- [Notification troubleshooting](https://docs.glue.ai/profile-and-preferences/push-notifications/notification-troubleshooting.md)
+- [Agent Personalization](https://docs.glue.ai/profile-and-preferences/ai-rules.md)
+- [Workspaces](https://docs.glue.ai/workspaces/workspaces.md): A workspace connects an organization, community, or team.
+- [Workspace settings](https://docs.glue.ai/workspaces/workspace-settings.md): View and manage groups, members, apps, and settings for your workspace.
+- [Multiple workspaces](https://docs.glue.ai/workspaces/multiple-workspaces.md): Using Glue as a member of more than one workspace
+- [External users](https://docs.glue.ai/workspaces/external-users.md): Collaborate with people outside your company in groups and threads
+- [Using Glue without a workspace](https://docs.glue.ai/workspaces/external-users/using-glue-without-a-workspace.md): External users can set up a free, limited use Glue account
+- [Custom emojis](https://docs.glue.ai/workspaces/custom-emojis.md)
+- [Workspace setup](https://docs.glue.ai/for-admins/workspace-setup.md)
+- [Manage members](https://docs.glue.ai/for-admins/manage-members.md)
+- [Group setup](https://docs.glue.ai/for-admins/group-setup.md)
+- [Slack import](https://docs.glue.ai/for-admins/slack-import.md): Admins can bring your Slack channel data into Glue
+- [Custom emoji import](https://docs.glue.ai/for-admins/slack-import/custom-emoji-import.md): Bring your customer emojis from Slack into Glue
+- [Security](https://docs.glue.ai/for-admins/security.md): Our data security and privacy measures
+- [Billing](https://docs.glue.ai/for-admins/billing.md)
+- [Free trial](https://docs.glue.ai/for-admins/free-trial.md)
+- [SAML SSO](https://docs.glue.ai/for-admins/saml-sso.md): Single Sign-on gives members access to Glue through an identity provider (IDP) of your choice.
+- [SCIM](https://docs.glue.ai/for-admins/scim.md): Glue supports member provisioning with the System for Cross-domain Identity Management (SCIM) standard.
+- [Glue launch messaging templates](https://docs.glue.ai/for-admins/glue-launch-messaging-templates.md)
+- [Slack Connect](https://docs.glue.ai/for-admins/slack-connect.md): Connect your Glue account to your Slack Connect channels
+- [Integrations overview](https://docs.glue.ai/integrations/integrations-overview.md)
+- [Add integrations to your Glue Workspace](https://docs.glue.ai/integrations/integrations-overview/add-integrations-to-your-glue-workspace.md)
+- [Manage your integrations](https://docs.glue.ai/integrations/integrations-overview/manage-your-integrations.md)
+- [App Events](https://docs.glue.ai/integrations/integrations-overview/app-events.md)
+- [Webhooks](https://docs.glue.ai/integrations/integrations-overview/webhooks.md)
+- [Using Glue with Claude](https://docs.glue.ai/integrations/using-glue-with-claude.md): Connect Claude (or any MCP-compatible AI client) to your Glue threads.
+- [Glue API](https://docs.glue.ai/integrations/glue-api.md): Looking for Glue's API documentation?
+- [GitHub](https://docs.glue.ai/integrations/github.md): Receive updates on GitHub Issues and PRs in Glue.
+- [Linear](https://docs.glue.ai/integrations/linear.md): Get rich link previews and auto-subscribe threads to Linear updates
+- [Jira](https://docs.glue.ai/integrations/jira.md): Get rich link previews and auto-subscribe threads to Jira updates
+- [Notion](https://docs.glue.ai/integrations/notion.md): Get rich link previews and auto-subscribe threads to Notion page updates
+- [Cursor](https://docs.glue.ai/integrations/cursor.md)
+- [Typeform](https://docs.glue.ai/integrations/typeform.md): Notify Glue when a form is submitted.
+- [ClickUp](https://docs.glue.ai/integrations/clickup.md): Notify Glue when tasks are created or updated.
+- [Monday.com](https://docs.glue.ai/integrations/monday.com.md): Receive notifications from your Monday.com workspace
+- [CircleCI](https://docs.glue.ai/integrations/circleci.md)
+- [Sentry](https://docs.glue.ai/integrations/sentry.md): Receive Sentry alerts in Glue
+- [Zoom](https://docs.glue.ai/integrations/zoom.md): Start or join a Zoom call from any thread or chat
+- [Google Meet](https://docs.glue.ai/integrations/google-meet.md): Start a Google Meet space from any thread or chat
+- [Google Drive](https://docs.glue.ai/integrations/google-drive.md)
+- [Giphy](https://docs.glue.ai/integrations/giphy.md): Quickly send GIFs in your messages
+- [Zapier apps](https://docs.glue.ai/integrations/zapier-apps.md): Connect with any of the integrations supported by Zapier
+- [MCP Servers](https://docs.glue.ai/integrations/mcp-servers.md): Connect MCP Servers to Glue
+- [MCP Server Best Practices](https://docs.glue.ai/integrations/mcp-servers/mcp-server-best-practices.md)
+- [MCP Server Directory](https://docs.glue.ai/integrations/mcp-servers/mcp-server-directory.md): Easily set up your favorite MCP Servers in Glue with just one click
+- [Release notes](https://docs.glue.ai/release-notes/release-notes.md)
+- [Beta features](https://docs.glue.ai/release-notes/beta-features.md): Get early access to pre-release functionality before it reaches general availability. Workspace admins can enable or disable beta access at any time.
+- [Miscellaneous](https://docs.glue.ai/faq/miscellaneous.md): Various questions asked by our users
+- [Troubleshooting](https://docs.glue.ai/faq/troubleshooting.md)
+
+## Glue Developers
+
+- [API quickstart](https://docs.glue.ai/developers/graphql-api/getting_started.md)
+- [Understanding Glue thread types](https://docs.glue.ai/developers/graphql-api/understanding-glue-thread-types.md)
+- [Threads, Group Chats, and DMs](https://docs.glue.ai/developers/graphql-api/understanding-glue-thread-types/threads_chats_dms.md)
+- [Sending messages](https://docs.glue.ai/developers/graphql-api/messages_and_threading.md)
+- [Message formatting](https://docs.glue.ai/developers/graphql-api/message_formatting.md)
+- [Attachments](https://docs.glue.ai/developers/graphql-api/attachments.md)
+- [Pagination](https://docs.glue.ai/developers/graphql-api/pagination.md)
+- [Outbound webhooks](https://docs.glue.ai/developers/graphql-api/outbound_webhooks.md)
+- [OAuth 2.0 authentication](https://docs.glue.ai/developers/authentication/oauth-2-0-authentication.md)
+- [OAuth scopes](https://docs.glue.ai/developers/authentication/scopes.md)
+- [Tutorial: Creating a hello world bot](https://docs.glue.ai/developers/tutorials/tutorial-creating-a-hello-world-bot.md)

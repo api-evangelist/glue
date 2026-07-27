@@ -1,0 +1,14 @@
+{
+  "repo": "glue",
+  "feeds": [
+    {
+      "source": "https://docs.glue.ai/developers/graphql-api/getting_started.md",
+      "feed_url": "https://docs.glue.ai/developers/graphql-api/getting_started.md",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}

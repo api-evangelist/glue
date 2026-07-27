@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.glue.ai
+versioning:
+  scheme: path
+  current: public
+  endpoint: https://api.gluegroups.com/public/graphql
+  note: GraphQL API served under a /public path; no dated API version documented.
+status_page: https://status.glue.ai
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No published deprecation/sunset policy found as of the search date.
+deprecated_operations: []

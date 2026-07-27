@@ -1,0 +1,7 @@
+generated: '2026-07-19'
+method: generated
+skills:
+  - file: glue-post-message.md
+    name: Post a message to a Glue thread
+    api: https://api.gluegroups.com/public/graphql
+    operations: [sendMessage, groups, me]

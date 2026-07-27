@@ -1,0 +1,69 @@
+generated: '2026-07-19'
+method: generated
+source: https://docs.glue.ai/developers/graphql-api/outbound_webhooks.md
+spec_type: AsyncAPI
+asyncapi: 3.0.0
+info:
+  title: Glue Outbound Webhooks
+  version: 1.0.0
+  description: >
+    Faithful AsyncAPI rendering of Glue's documented outbound webhook catalog.
+    Webhooks are configured per OAuth Application; when a workspace authorizes the
+    app, Glue creates a webhook posting to the app's URL. All requests are HTTPS and
+    carry an X-Glue-Event-Signature header (HMAC-SHA256 of the body with the app secret).
+    Non-200 responses are retried at 10s, 1m, and 10m.
+defaultContentType: application/json
+channels:
+  outboundWebhook:
+    address: '{subscriberUrl}'
+    parameters:
+      subscriberUrl:
+        description: The HTTPS URL registered on the OAuth Application.
+    messages:
+      messageCreated:
+        $ref: '#/components/messages/messageCreated'
+      threadCreated:
+        $ref: '#/components/messages/threadCreated'
+operations:
+  receiveMessageCreated:
+    action: receive
+    channel:
+      $ref: '#/channels/outboundWebhook'
+    messages:
+      - $ref: '#/channels/outboundWebhook/messages/messageCreated'
+  receiveThreadCreated:
+    action: receive
+    channel:
+      $ref: '#/channels/outboundWebhook'
+    messages:
+      - $ref: '#/channels/outboundWebhook/messages/threadCreated'
+components:
+  messages:
+    messageCreated:
+      name: message.created
+      title: Message created
+      summary: A new message was sent in an existing thread. Contains the Message and its Thread.
+      payload:
+        type: object
+        properties:
+          type: { type: string, const: message.created }
+          workspaceID: { type: string }
+          event:
+            type: object
+            properties:
+              message: { type: object }
+              thread: { type: object }
+    threadCreated:
+      name: thread.created
+      title: Thread created
+      summary: A new thread was created. Contains the Thread and the first Message.
+      payload:
+        type: object
+        properties:
+          type: { type: string, const: thread.created }
+          workspaceID: { type: string }
+          event:
+            type: object
+            properties:
+              message: { type: object }
+              thread: { type: object }

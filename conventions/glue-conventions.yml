@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.glue.ai/developers/graphql-api/getting_started.md
+api_style: graphql
+endpoint: https://api.gluegroups.com/public/graphql
+authentication:
+  style: oauth2-bearer
+  header: 'Authorization: Bearer <ACCESS_TOKEN>'
+  ref: authentication/glue-authentication.yml
+identifiers:
+  scheme: prefixed opaque IDs
+  prefixes:
+    thr_: thread
+    grp_: group
+  node_query: node(id:) resolves any prefixed ID
+idempotency:
+  supported: true
+  mechanism: upsert keys on the sendMessage mutation
+  keys:
+    - field: threadBy
+      scope: ThreadInput
+      behavior: >
+        Provide a stable value to make thread creation idempotent — calling sendMessage
+        again with the same threadBy updates the existing thread instead of creating a new one.
+    - field: uniqueBy
+      scope: MessageInput
+      behavior: >
+        Provide a stable value to make message creation idempotent — calling sendMessage
+        again with the same uniqueBy updates the existing message instead of creating a new one.
+  source: https://docs.glue.ai/developers/graphql-api/messages_and_threading.md
+pagination:
+  style: relay-cursor-connections
+  docs: https://docs.glue.ai/developers/graphql-api/pagination.md
+  response_fields: [nodes, edges, pageInfo]
+webhooks:
+  ref: asyncapi/glue-webhooks-asyncapi.yml
+  signature_header: X-Glue-Event-Signature
+  signature_algorithm: HMAC-SHA256
+  transport: HTTPS only
+  retry_schedule: [10s, 1m, 10m]
+error_envelope:
+  style: graphql-errors
+  note: GraphQL responses carry an errors[] array alongside data (no RFC 9457 problem+json).

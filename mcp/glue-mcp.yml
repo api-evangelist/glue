@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://api.glue.ai/.well-known/oauth-protected-resource
+server:
+  name: glue
+  transport: http
+  url: https://mcp.glue.ai/mcp
+  description: >
+    Glue's hosted remote MCP server for its team-communication workspace. The /mcp
+    endpoint on api.glue.ai returns HTTP 401 with a WWW-Authenticate challenge whose
+    resource_metadata points at https://mcp.glue.ai/.well-known/oauth-protected-resource;
+    the protected-resource document declares resource https://mcp.glue.ai/mcp,
+    authorization server https://api.glue.ai, and scopes mcp:read / mcp:write.
+auth:
+  type: oauth2
+  authorization_server: https://api.glue.ai
+  authorization_endpoint: https://api.glue.ai/oauth/authorize
+  token_endpoint: https://api.glue.ai/oauth/token
+  registration_endpoint: https://api.glue.ai/oauth/register   # RFC 7591 dynamic client registration
+  grant_types: [authorization_code, refresh_token]
+  pkce: [S256]
+  scopes: [mcp:read, mcp:write]
+tools: []
+notes: >
+  Live, auth-protected hosted MCP server (verified 401 + protected-resource metadata).
+  Tool list is not published anonymously; discover after DCR + OAuth. Glue docs also
+  describe connecting third-party MCP servers INTO Glue (Glue as MCP host) at
+  https://docs.glue.ai/integrations/mcp-servers.md — distinct from this server, which
+  exposes the Glue workspace itself to agents.
