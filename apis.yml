@@ -10,6 +10,17 @@ description: >-
   hosted remote MCP server at mcp.glue.ai); outbound webhooks (message.created, thread.created)
   signed with HMAC-SHA256; and idempotent upsert keys on message and thread creation. Glue is
   SOC 2 compliant, supports SSO (Google, Okta), and is backed by Craft Ventures and Y Combinator.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
