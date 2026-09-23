@@ -1,0 +1,1 @@
+{"resource":"https://mcp.glue.ai/mcp","authorization_servers":["https://api.glue.ai"],"scopes_supported":["mcp:read","mcp:write"],"bearer_methods_supported":["header"]}
