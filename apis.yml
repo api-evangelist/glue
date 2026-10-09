@@ -146,6 +146,8 @@ common:
   url: llms/glue-llms.txt
 - type: AgentSkill
   url: skills/_index.yml
+- type: SpectralRules
+  url: https://github.com/apiglue/talks/blob/3b4fb169d32eac883f17ae215a73995488750eb4/api-design/rulesets/api-design-standards-ruleset-extended.json
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
