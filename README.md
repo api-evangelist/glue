@@ -64,6 +64,127 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Glue is a company surfaced as a portfolio company of craft-ventures, y-combinator and added to the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment pipeline.
+Glue is a team communication platform that replaces channel-based chat with structured, named threads so decisions stay organized and don't get lost, with AI agents (@Glue, @Cursor) that can be mentioned inside threads to summarize, add context, and generate work. For developers, Glue exposes a public GraphQL API at api.gluegroups.com for sending messages and reading workspaces, threads, and groups; OAuth 2.0 authentication (client-credentials for the GraphQL API, plus an authorization-code flow with dynamic client registration and PKCE for a hosted remote MCP server at mcp.glue.ai); outbound webhooks (message.created, thread.created) signed with HMAC-SHA256; and idempotent upsert keys on message and thread creation. Glue is SOC 2 compliant, supports SSO (Google, Okta), and is backed by Craft Ventures and Y Combinator.
 
-Backed by: craft-ventures, y-combinator — https://glue.ai
+**Areas:** Company · Software-as-a-Service · Team Communication · Messaging · Collaboration · GraphQL · Webhook · MCP · Productivity · AI Agents
+
+## Glue on APIs.io
+
+Everything profiled for Glue is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/glue/](https://apis.io/providers/glue/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Glue GraphQL API](https://apis.io/apis/glue/glue-graphql-api/) — Public GraphQL API for the Glue workspace — send messages (sendMessage), read workspaces, threads, and groups, with Relay cursor-connection pagination and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Glue Outbound Webhooks](https://apis.io/asyncapis/glue/glue-webhooks-asyncapi/)
+
+#### Event channels (1)
+
+Individual events and webhooks the provider emits.
+
+- [{subscriberUrl}](https://apis.io/channels/glue/subscriberurl/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [glue](https://apis.io/servers/glue/glue/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Glue — talks rules](https://apis.io/rules/glue/glue-talks-spectral-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Glue Authentication](https://apis.io/security/glue/glue-authentication/)
+- [Glue Domain Security](https://apis.io/security/glue/glue-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Glue Scopes](https://apis.io/scopes/glue/glue-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://glue.ai)
+- [Documentation](https://docs.glue.ai)
+- [Getting started](https://docs.glue.ai/developers/graphql-api/getting_started.md)
+- [API reference](https://docs.glue.ai/developers/graphql-api/getting_started.md)
+- [Pricing](https://glue.ai/pricing)
+- [Sign up](https://app.glue.ai/auth?intent=signup)
+- [Support](https://docs.glue.ai/get-started/help-and-support.md)
+- [Blog](https://glue.ai/blog)
+- [Compliance](https://glue.ai/company/security)
+- [Terms of service](https://glue.ai/terms)
+- [Privacy policy](https://glue.ai/privacy)
+- [Status](https://status.glue.ai)
+
+## API Evangelist rating
+
+**Kin Score 52.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 63.6 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 58.9 |
+| Access clarity | 46.1 |
+
+**Agent readiness 45.5** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | documented (partial credit) |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | derived (partial credit) |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 39.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/glue/](https://apis.io/providers/glue/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Glue: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/glue/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
